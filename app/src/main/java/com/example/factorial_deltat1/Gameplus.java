@@ -75,11 +75,11 @@ public class Gameplus extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gameplus);
-        co1 = (TextView) findViewById(R.id.co1);
-        co2 = (TextView) findViewById(R.id.co2);
-        co3 = (TextView) findViewById(R.id.co3);
-        que = (TextView) findViewById(R.id.que);
-        time=(TextView)findViewById(R.id.time);
+        co1 = findViewById(R.id.co1);
+        co2 = findViewById(R.id.co2);
+        co3 = findViewById(R.id.co3);
+        que = findViewById(R.id.que);
+        time= findViewById(R.id.time);
 
         view=this.getWindow().getDecorView();
         call();
@@ -115,8 +115,8 @@ public class Gameplus extends AppCompatActivity {
         a = p / 2;
         e = 0;
         f = 0;
-        int x[] = new int[100];
-        int y[] = new int[100];
+        int[] x = new int[100];
+        int[] y = new int[100];
 
         int i = 0;
         b = 0;
