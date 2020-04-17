@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,23 +48,16 @@ public class Normal2 extends AppCompatActivity implements View.OnClickListener {
             a=x[random];
             b=a;
 
-
-            final int rando = new Random().nextInt(p - (p/2)) + p/2;
-            e= rando;
-
-            while(e==p/2) {
-                final int r = new Random().nextInt(p - (p/2)) + p/2;
-                e= r;
+            e=b+1;
+            while (p%e==0) {
+                e = e+1;
             }
 
 
 
-
-            final int ran = new Random().nextInt(p - (p/2)) + p/2;
-            f= ran;
-            while(f==e) {
-                final int randoms = new Random().nextInt(p - (p/2)) + p/2;
-                f= randoms;
+            f = e+1;
+            while (p%f==0) {
+                f = f+1;
             }
 
             y[0]=a;
@@ -87,8 +81,13 @@ public class Normal2 extends AppCompatActivity implements View.OnClickListener {
 
             f=y[0];
         }
+
+
+
+
+
         else{
-            a=1;e=4;f=5;
+            a=1;e=4;f=5;b=1;
         }
 
 
