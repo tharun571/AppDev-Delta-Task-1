@@ -14,9 +14,9 @@ TextView st,mode;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hacker);
 
-       st=(TextView)findViewById(R.id.st);
+       st= findViewById(R.id.st);
 
-       mode=(TextView)findViewById(R.id.mode);
+       mode= findViewById(R.id.mode);
 
         st.setOnClickListener(this);
 

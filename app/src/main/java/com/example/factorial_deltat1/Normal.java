@@ -21,7 +21,7 @@ public static final String EXTRA_P="com.example.Factorial_DeltaT1.EXTRA_P";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_normal);
 
-        done =(Button) findViewById(R.id.done);
+        done = findViewById(R.id.done);
 
         done.setOnClickListener(this);
     }
@@ -30,11 +30,15 @@ public static final String EXTRA_P="com.example.Factorial_DeltaT1.EXTRA_P";
     @Override
     public void onClick(View v) {
         if(v.getId()==R.id.done){
-            no=(EditText)findViewById(R.id.no);
+            no= findViewById(R.id.no);
 
 
             if (no.getText().toString().matches("")) {
                 Toast.makeText(this, "You did not enter a number", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            else if (no.getText().toString().matches("0")) {
+                Toast.makeText(this, "Enter a natural number", Toast.LENGTH_SHORT).show();
                 return;
             }
             else {

@@ -13,7 +13,7 @@ TextView ta;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nr);
-        ta=(TextView)findViewById(R.id.ta);
+        ta= findViewById(R.id.ta);
 
         ta.setOnClickListener(this);
 

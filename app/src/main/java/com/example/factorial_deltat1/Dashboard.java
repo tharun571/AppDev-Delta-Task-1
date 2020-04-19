@@ -14,9 +14,9 @@ Button n,h,hp;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        n=(Button)findViewById(R.id.n);
-        h=(Button)findViewById(R.id.h);
-        hp=(Button)findViewById(R.id.hp);
+        n= findViewById(R.id.n);
+        h= findViewById(R.id.h);
+        hp= findViewById(R.id.hp);
 
         n.setOnClickListener(this);
         h.setOnClickListener(this);

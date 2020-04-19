@@ -19,8 +19,8 @@ TextView ta,answer;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nw);
 
-        answer=(TextView)findViewById(R.id.answer);
-        ta=(TextView)findViewById(R.id.ta);
+        answer= findViewById(R.id.answer);
+        ta= findViewById(R.id.ta);
 
         answer.setText("Right answer is "+l);
 

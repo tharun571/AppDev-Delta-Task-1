@@ -57,8 +57,8 @@ public class Game extends AppCompatActivity {
             a = p / 2;
             e = 0;
             f = 0;
-            int x[] = new int[100];
-            int y[] = new int[100];
+        int[] x = new int[100];
+        int[] y = new int[100];
 
             int i = 0;
             b = 0;
@@ -122,10 +122,10 @@ public class Game extends AppCompatActivity {
 
 
 
-            c1 = (TextView) findViewById(R.id.c1);
-            c2 = (TextView) findViewById(R.id.c2);
-            c3 = (TextView) findViewById(R.id.c3);
-            qu = (TextView) findViewById(R.id.qu);
+            c1 = findViewById(R.id.c1);
+            c2 = findViewById(R.id.c2);
+            c3 = findViewById(R.id.c3);
+            qu = findViewById(R.id.qu);
 
 
 

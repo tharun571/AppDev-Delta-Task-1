@@ -15,6 +15,7 @@ TextView yss,hss,taaa;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scoreplus);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         Intent intent = getIntent();                                                            //
         int p = intent.getIntExtra(Gameplus.EXTRA_HSS, 0);
         yss= findViewById(R.id.yss);

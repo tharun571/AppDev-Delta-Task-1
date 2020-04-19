@@ -27,8 +27,8 @@ public class Normal2 extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_normal2);
         b=1;
         int a = p / 2; e = 0; f = 0;
-        int x[]=new int[100];
-        int y[]= new int[100];
+        int[] x = new int[100];
+        int[] y = new int[100];
 
         int i=0; b=0;
         if(p>3) {
@@ -92,9 +92,9 @@ public class Normal2 extends AppCompatActivity implements View.OnClickListener {
 
 
         q=a;
-        o1 = (TextView) findViewById(R.id.o1);
-        o2 = (TextView) findViewById(R.id.o2);
-        o3 = (TextView) findViewById(R.id.o3);
+        o1 = findViewById(R.id.o1);
+        o2 = findViewById(R.id.o2);
+        o3 = findViewById(R.id.o3);
 
         o1.setText("" + e);
         o2.setText("" + a);

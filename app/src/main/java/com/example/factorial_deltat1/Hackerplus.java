@@ -13,10 +13,11 @@ TextView sta,mod;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hackerplus);
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
 
 
-        sta=(TextView)findViewById(R.id.sta);
-        mod=(TextView)findViewById(R.id.mod);
+        sta= findViewById(R.id.sta);
+        mod= findViewById(R.id.mod);
 
 
         sta.setOnClickListener(new View.OnClickListener() {
