@@ -17,9 +17,9 @@ TextView yss,hss,taaa;
         setContentView(R.layout.activity_scoreplus);
         Intent intent = getIntent();                                                            //
         int p = intent.getIntExtra(Gameplus.EXTRA_HSS, 0);
-        yss=(TextView)findViewById(R.id.yss);
-        hss=(TextView)findViewById(R.id.hss);
-        taaa=(TextView)findViewById(R.id.taaa);
+        yss= findViewById(R.id.yss);
+        hss= findViewById(R.id.hss);
+        taaa= findViewById(R.id.taaa);
 
         yss.setText("YOUR SCORE IS " + p);
 
