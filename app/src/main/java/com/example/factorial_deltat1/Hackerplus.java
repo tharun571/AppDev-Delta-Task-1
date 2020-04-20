@@ -3,8 +3,10 @@ package com.example.factorial_deltat1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Hackerplus extends AppCompatActivity {
@@ -14,6 +16,11 @@ TextView sta,mod;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hackerplus);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        LinearLayout constraintLayout = findViewById(R.id.layout1);
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(100);
+        animationDrawable.setExitFadeDuration(3000);
+        animationDrawable.start();
 
 
         sta= findViewById(R.id.sta);

@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Scoreplus extends AppCompatActivity {
@@ -21,6 +23,11 @@ TextView yss,hss,taaa;
         yss= findViewById(R.id.yss);
         hss= findViewById(R.id.hss);
         taaa= findViewById(R.id.taaa);
+        LinearLayout constraintLayout = findViewById(R.id.layout1);
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(100);
+        animationDrawable.setExitFadeDuration(3000);
+        animationDrawable.start();
 
         yss.setText("YOUR SCORE IS " + p);
 

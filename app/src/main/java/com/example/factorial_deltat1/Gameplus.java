@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -13,6 +14,7 @@ import android.os.Handler;
 import android.os.VibrationEffect;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.os.Vibrator;
@@ -94,6 +96,11 @@ public class Gameplus extends AppCompatActivity {
         sc= findViewById(R.id.sc);
         pb=(ProgressBar)findViewById(R.id.pb);
         pb.getProgressDrawable().setColorFilter(Color.WHITE,android.graphics.PorterDuff.Mode.SRC_IN);
+        LinearLayout constraintLayout = findViewById(R.id.layout1);
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(100);
+        animationDrawable.setExitFadeDuration(3000);
+        animationDrawable.start();
 
         view=this.getWindow().getDecorView();
         call();
@@ -156,11 +163,13 @@ public class Gameplus extends AppCompatActivity {
                 if (p % a == 0) {
                     x[i] = a;
                     i++;
-                    if (i == 1) {
-                        e = a;
-                    }
+
                 }
                 a = a - 1;
+            }
+
+            if(i>1){
+                i=i-1;
             }
 
 
@@ -169,16 +178,21 @@ public class Gameplus extends AppCompatActivity {
             b = a;
 
 
-            e=b+1;
+            final int rando=new Random().nextInt(p-2)+2;
+            e=rando;
+
             while (p%e==0) {
-                e = e+1;
+                final int rand=new Random().nextInt(p-2)+2;
+                e=rand;
+
             }
+            final int ran=new Random().nextInt(p-2)+2;
+            f=ran;
 
+            while (p%f==0|e==f) {
+                final int ra=new Random().nextInt(p-2)+2;
+                f=ra;
 
-
-            f = e+1;
-            while (p%f==0) {
-                f = f+1;
             }
 
             y[0] = a;
@@ -397,7 +411,7 @@ public class Gameplus extends AppCompatActivity {
 
         int i = 0;
         b = 0;
-        if (p > 3) {
+        if (p > 4) {
 
             while (a > 0) {
                 if (p % a == 0) {
@@ -409,6 +423,10 @@ public class Gameplus extends AppCompatActivity {
                 }
                 a = a - 1;
             }
+            if(i>1){
+                i--;
+            }
+
 
 
             final int random = new Random().nextInt(i);
@@ -416,16 +434,20 @@ public class Gameplus extends AppCompatActivity {
             b = a;
 
 
-            e=b+1;
+            final int rando=new Random().nextInt(p-2)+2;
+            e=rando;
+
             while (p%e==0) {
-                e = e+1;
+                final int rand=new Random().nextInt(p-2)+2;
+                e=rand;
+
             }
+            final int ran=new Random().nextInt(p-2)+2;
+            f=ran;
 
-
-
-            f = e+1;
-            while (p%f==0) {
-                f = f+1;
+            while (p%f==0|e==f) {
+                final int ra=new Random().nextInt(p-2)+2;
+                f=ra;
             }
 
             y[0] = a;
@@ -450,7 +472,7 @@ public class Gameplus extends AppCompatActivity {
             f = y[0];
         } else {
             a = 1;
-            e = 4;
+            e = 6;
             f = 5;
             b=1;
         }

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-  <gradient
-      android:startColor="#FF5EA2"
-      android:endColor="#6C50EC"
-      android:angle="270"
-/>
+  <item android:drawable="@drawable/g1"
+      android:duration="4000"/>
 
+  <item android:drawable="@drawable/g2"
+      android:duration="4000"/>
 
-</shape>
+  <item android:drawable="@drawable/g3"
+      android:duration="4000"/>
+
+</animation-list>
