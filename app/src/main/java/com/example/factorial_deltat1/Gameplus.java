@@ -148,6 +148,8 @@ public class Gameplus extends AppCompatActivity {
         Log.w(TAG,"qwertyuiop");
         final int rr = new Random().nextInt(1000) + 1;
         p = rr;
+
+
         b = 1;
         a = p / 2;
         e = 0;
@@ -167,6 +169,10 @@ public class Gameplus extends AppCompatActivity {
                 }
                 a = a - 1;
             }
+
+           
+
+
 
             if(i>1){
                 i=i-1;

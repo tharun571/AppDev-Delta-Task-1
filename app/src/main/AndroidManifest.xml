@@ -19,8 +19,10 @@
         <activity
             android:name=".Game"
             android:noHistory="true" />
-        <activity android:name=".Nr" />
-        <activity android:name=".Nw" />
+        <activity android:name=".Nr"
+            android:noHistory="true"/>
+        <activity android:name=".Nw"
+            android:noHistory="true"/>
         <activity
             android:name=".Normal2"
             android:noHistory="true" />
@@ -31,7 +33,8 @@
         <activity android:name=".Normal"
             android:noHistory="true"/>
         <activity android:name=".Dashboard" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
